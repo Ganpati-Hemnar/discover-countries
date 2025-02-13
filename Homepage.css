@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Nunito, sans-serif;
+}
+main {
+    padding: 24px;
+}
+#Modebtn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#searchInput {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#searchInput:focus {
+    outline: none;
+    border-color: #007bff;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.title {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-container {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    padding-inline: 24px;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.countries-container {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.country-card {
+    display: block;
+    margin-top: 16px;
+    width: 250px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 12px;
+    transition: all 0.3s ease-in-out;
+    height: 400px;
+}
+.country-card:hover {
+    transform: scale(1.05);
+}
+.country-card img {
+    width: 100%;
+}
+.card-text {
+    padding-inline: 7px;
+}
+.cart-title {
+    font-size: 24px;
+    margin-block: 16px;
+}
+.card-text p {
+    margin-block: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .countries-container {
+        gap: 16px;
+        justify-content: center;
+    }
+    .country-card {
+        width: 200px; 
+        height: auto;
+    }
+
+    #searchInput {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .countries-container {
+        gap: 12px;
+    }
+    .country-card {
+        width: 100%; 
+        margin: 0 auto;
+    }
+    .country-card img {
+        height: auto;
+    }
+}
+
+
+
+
+
