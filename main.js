@@ -49,7 +49,7 @@ function changeMode() {
 }
 
 function goToHomePage() {
-    window.location.href = "Homepage.html"; //For home page
+    window.location.href = "index.html"; //For home page
   }
 
 
